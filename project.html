@@ -92,7 +92,7 @@
         $("#tblData").html("");
 
         $.ajax({
-          url: 'http://localhost:8080/project_list',
+          url: 'https://employee-management-system-api-2tuo.onrender.com/project_list',
           method: 'GET',
           contentType: 'application/json',
           success: function (response) {
@@ -121,7 +121,7 @@
       $('#DeleteBtn').on('click', function () {
         if (deleteUserId) {
           $.ajax({
-            url: 'http://localhost:8080/project/delete',
+            url: 'https://employee-management-system-api-2tuo.onrender.com/project/delete',
             method: 'POST',
             contentType: 'application/json',
             data: JSON.stringify({ prid: deleteUserId }),

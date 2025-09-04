@@ -91,8 +91,7 @@
   </div>
 
 
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  
   <script src="js/jquery-3.7.1.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script>
@@ -119,7 +118,7 @@
 
       if (projectId) {
         $.ajax({
-          url: `http://localhost:8080/project/edit/${projectId}`,
+          url: `https://employee-management-system-api-2tuo.onrender.com/project/edit/${projectId}`,
           method: 'GET',
           success: function (pdata) {
             $('#p_name').val(pdata.projectname);
@@ -150,7 +149,7 @@
       };
 
       $.ajax({
-        url: 'http://localhost:8080/edit_project',
+        url: 'https://employee-management-system-api-2tuo.onrender.com/edit_project',
         method: 'POST',
         contentType: 'application/json',
         data: JSON.stringify(updatedData),

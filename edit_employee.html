@@ -114,7 +114,7 @@
 
       if (empId) {
         $.ajax({
-          url: `http://localhost:8080/edit/${empId}`,
+          url: `https://employee-management-system-api-2tuo.onrender.com/edit/${empId}`,
           method: 'GET',
           success: function (data) {
             $('#name').val(data.name);
@@ -144,7 +144,7 @@
       };
 
       $.ajax({
-        url: 'http://localhost:8080/edit_employee',
+        url: 'https://employee-management-system-api-2tuo.onrender.com/edit_employee',
         method: 'POST',
         contentType: 'application/json',
         data: JSON.stringify(updatedData),
@@ -164,7 +164,7 @@
       $('#DeleteBtn').on('click', function () {
         if (deleteUserId) {
           $.ajax({
-            url: 'http://localhost:8080/delete',
+            url: 'https://employee-management-system-api-2tuo.onrender.com/delete',
             method: 'POST',
             contentType: 'application/json',
             data: JSON.stringify({ emid: deleteUserId }),

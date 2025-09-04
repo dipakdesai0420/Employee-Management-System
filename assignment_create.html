@@ -80,8 +80,7 @@
   </div>
 
 
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
   <script src="js/jquery-3.7.1.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
 
@@ -101,7 +100,7 @@
 
     
       $.ajax({
-        url: "http://localhost:8080/list",
+        url: "https://employee-management-system-api-2tuo.onrender.com/list",
         type: "GET",
         success: function (data) {
           data.forEach(function (emp) {
@@ -117,7 +116,7 @@
 
       
       $.ajax({
-        url: "http://localhost:8080/project_list",
+        url: "https://employee-management-system-api-2tuo.onrender.com/project_list",
         type: "GET",
         success: function (data) {
           data.forEach(function (project) {
@@ -141,7 +140,7 @@
         };
 
         $.ajax({
-          url: "http://localhost:8080/assignment_create",
+          url: "https://employee-management-system-api-2tuo.onrender.com/assignment_create",
           type: "POST",
           contentType: "application/json",
           data: JSON.stringify(assignment),

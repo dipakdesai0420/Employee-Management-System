@@ -73,8 +73,7 @@
     </div>
 
 
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
 
@@ -91,7 +90,7 @@
     $(document).ready(function () {
       // Load assignments
       $.ajax({
-        url: "http://localhost:8080/assignment_list",
+        url: "https://employee-management-system-api-2tuo.onrender.com/assignment_list",
         type: "GET",
         success: function (data) {
             console.log(data)
@@ -128,7 +127,7 @@
       $("#DeleteBtn").click(function () {
         if (deleteId) {
           $.ajax({
-            url: "http://localhost:8080/assignment_delete",
+            url: "https://employee-management-system-api-2tuo.onrender.com/assignment_delete",
             type: "POST",
             contentType: "application/json",
             data: JSON.stringify({ assid: deleteId }),
